@@ -34,13 +34,13 @@ jobs:
       run: bash ./scripts/check-genesis.sh
 
     - name: Pack testnet configs
-      run: cd dist && tar cfz ephemery-genesis.tar.gz *
+      run: cd dist && tar cfz network-config.tar.gz *
 
     - name: Upload full config artifact
       uses: actions/upload-artifact@v3
       with:
-        path: ./dist/ephemery-genesis.tar.gz
-        name: ephemery-genesis.tar.gz
+        path: ./dist/network-config.tar.gz
+        name: network-config.tar.gz
     
     - name: Pack legacy testnet configs
       run: cd dist2 && tar cfz testnet-all.tar.gz *
