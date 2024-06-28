@@ -54,17 +54,17 @@ jobs:
     - name: Upload genesis.json artifact
       uses: actions/upload-artifact@v3
       with:
-        path: ./dist/genesis.json
+        path: ./dist/metadata/genesis.json
         name: genesis.json
     
     - name: Upload config.yaml artifact
       uses: actions/upload-artifact@v3
       with:
-        path: ./dist/config.yaml
+        path: ./dist/metadata/config.yaml
         name: config.yaml
     - name: Upload genesis.ssz artifact
       uses: actions/upload-artifact@v3
       with:
-        path: ./dist/genesis.ssz
+        path: ./dist/metadata/genesis.ssz
         name: genesis.ssz
     
